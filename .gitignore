@@ -1,3 +1,27 @@
+# Data files
+data/GDSC/rnaseq/*.pkl
+data/GDSC/fpkm/*.pkl
+data/GDSC/raw/*.csv
+data/GDSC/raw/*.pkl
+data/PDX/response/*.csv
+data/PDX/response/*.pkl
+data/PDX/fpkm/*.pkl
+data/GDSC/response/*.csv
+data/PDX/pancancer_biospecimen.csv
+data/GDSC/model_list_20191104.csv
+data/TCGA/rnaseq/*.pkl
+data/HMF/rnaseq/*.pkl
+data/TCGA/response/
+data/TCGA/raw
+download_data/gdc_client
+
+# Figures
+.png
+figure_1/figures
+figure_2/figures
+figure_3/figures
+figure_4/figures
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
