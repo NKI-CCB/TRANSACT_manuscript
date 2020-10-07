@@ -23,7 +23,14 @@ download_data/gdc_client
 figure_1/figures
 figure_2/figures
 figure_3/figures
-figure_4/figures
+figure_4/figures/baseline_A/*
+figure_4/figures/baseline_B/*
+figure_4/figures/baseline_C/*
+figure_4/figures/PRECISE/*
+figure_4/figures/TRANSACT/*
+figure_4/figures/volcano/*
+figure_4/*.csv
+figure_4/*.png
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
