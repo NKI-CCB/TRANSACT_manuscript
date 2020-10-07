@@ -2,17 +2,20 @@
 data/GDSC/rnaseq/*.pkl
 data/GDSC/fpkm/*.pkl
 data/GDSC/raw/*.csv
+data/GDSC/response/*.xlsx*
 data/GDSC/raw/*.pkl
-data/PDX/response/*.csv
-data/PDX/response/*.pkl
-data/PDX/fpkm/*.pkl
-data/GDSC/response/*.csv
-data/PDX/pancancer_biospecimen.csv
+data/HMF/*
+data/PDXE/response/*.csv
+data/PDXE/response/*.pkl
+data/PDXE/fpkm/*.pkl
+data/PDXE/response/*.csv
+data/PDXE/pancancer_biospecimen.csv
 data/GDSC/model_list_20191104.csv
 data/TCGA/rnaseq/*.pkl
 data/HMF/rnaseq/*.pkl
-data/TCGA/response/
-data/TCGA/raw
+data/TCGA/response/*
+data/TCGA/raw/*
+data/TCGA/rnaseq/*
 download_data/gdc_client
 
 # Figures
