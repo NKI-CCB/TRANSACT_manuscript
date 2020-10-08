@@ -31,6 +31,9 @@ figure_4/figures/TRANSACT/*
 figure_4/figures/volcano/*
 figure_4/*.csv
 figure_4/*.png
+figure_5/figures/*
+figure_5/gsea_input/*
+figure_5/gsea_output/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

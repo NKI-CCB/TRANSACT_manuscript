@@ -1,0 +1,2 @@
+screen -S GSEA_BIOCARTA_GDSC1_1000 -d -m sh launch_gsea.sh unique_drug_GDSC_1.csv c2.cp.biocarta 1000;
+screen -S GSEA_BIOCARTA_GDSC2_1000 -d -m sh launch_gsea.sh unique_drug_GDSC_2.csv c2.cp.biocarta 1000;
