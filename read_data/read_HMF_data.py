@@ -19,12 +19,9 @@ from functools import reduce
 def read_HMF_data(data_types,
                 tissues,
                 projects=None,
-                folder='/DATA/s.mourragui/HMF/salmon_output/salmon_v1_0_0_gencode_v_29_lift_37_2019_12_20/HMF_data'):
+                folder='../data/HMF'):
 
-    # If folder is None, set to default
-    # folder = folder or '/DATA/s.mourragui/HMF/salmon_output/salmon_v1_0_0_gencode_v_29_lift_37_2019_12_20/HMF_data'
-    folder = '/DATA/s.mourragui/HMF/salmon_output/salmon_v1_0_0_gencode_v_29_lift_37_2019_12_20/HMF_data' 
-    
+    # If folder is None, set to default    
     data_folder = folder + '_mini_cancer/'
     
     if tissues is None:
