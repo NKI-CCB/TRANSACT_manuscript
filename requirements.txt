@@ -1,10 +1,8 @@
 adjustText==0.7.3
 backcall==0.2.0
-bleach==3.1.5
 certifi==2020.6.20
 cffi==1.14.0
 combat==0.2.0
-cryptography==2.8
 cycler==0.10.0
 decorator==4.4.2
 docutils==0.16
@@ -18,7 +16,6 @@ ipython-genutils==0.2.0
 jdcal==1.4.1
 jedi==0.17.1
 jeepney==0.4.3
-Jinja2==2.11.2
 joblib==0.14.1
 jsonschema==2.6.0
 jupyter-client==6.1.5
@@ -26,7 +23,6 @@ jupyter-core==4.6.3
 keyring==21.2.1
 kiwisolver==1.1.0
 llvmlite==0.33.0
-lxml==4.4.2
 MarkupSafe==1.1.1
 matplotlib==3.2.1
 mpmath==1.1.0
@@ -46,13 +42,11 @@ prompt-toolkit==3.0.5
 ptyprocess==0.6.0
 pyasn1==0.4.3
 pycparser==2.20
-Pygments==2.6.1
 pyOpenSSL==18.0.0
 pyparsing==2.4.6
 python-dateutil==2.8.1
 python-utils==2.4.0
 pytz==2020.1
-PyYAML==3.13
 pyzmq==19.0.1
 readme-renderer==26.0
 requests==2.22.0
@@ -76,7 +70,6 @@ tqdm==4.46.1
 traitlets==4.3.3
 twine==3.2.0
 umap-learn==0.4.6
-urllib3==1.25.9
 wcwidth==0.2.5
 webencodings==0.5.1
 xarray==0.15.1
