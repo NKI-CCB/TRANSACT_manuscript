@@ -6,6 +6,7 @@ conda install -c anaconda virtualenv
 conda install setuptools
 conda install dateutil
 conda install pandas
+pip install xlrd==1.2.0
 pip install -r ./TCGA_dependencies/requirements.txt
 
 # Install GDC client

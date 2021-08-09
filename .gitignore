@@ -17,6 +17,11 @@ data/TCGA/response/*
 data/TCGA/raw/*
 data/TCGA/rnaseq/*
 download_data/gdc_client
+*.pkl
+.pkl
+.zip
+*.zip
+
 
 # Figures
 .png

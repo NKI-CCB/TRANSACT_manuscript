@@ -36,8 +36,8 @@ def read_GDSC_data(data_types,
                for d in data_types}
     
     # Reduce to same samples
-    common_samples = reduce(np.intersect1d, [list(data_df[d].index.get_level_values(0).astype(str)) for d in data_df])
-    data_df = {d:data_df[d].loc[common_samples] for d in data_df}
+    # common_samples = reduce(np.intersect1d, [list(data_df[d].index.get_level_values(0).astype(str)) for d in data_df])
+    # data_df = {d:data_df[d].loc[common_samples] for d in data_df}
     assert(np.unique([data_df[d].shape[0] for d in data_df]).shape[0] == 1)
     
     return data_df
