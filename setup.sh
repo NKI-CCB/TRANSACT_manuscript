@@ -7,6 +7,7 @@ conda install -c r r=3.5.1
 conda install -c r rpy2
 python -m ipykernel install --user --name transact_figures --display-name "Python (TRANSACT_figures)"
 conda install tzlocal
+conda install -c conda-forge umap-learn
 pip install seaborn scikit-learn statannot torch skorch
 
 # Install edgeR
