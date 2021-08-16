@@ -112,7 +112,7 @@ from cv_results_processing import parse_folder_results, read_best_param, make_sk
 # DATA FOLDER
 #
 #####
-figure_folder = './figures/'
+figure_folder = './output/'
 figure_subfolder = 'baseline_B'
 if figure_subfolder not in os.listdir(figure_folder):
     os.makedirs(figure_folder + figure_subfolder)
