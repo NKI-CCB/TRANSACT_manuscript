@@ -15,7 +15,7 @@
 with_mean = True
 with_std = True
 n_splits = 5
-output_folder = './output/GDSC_only/'
+output_folder = './output/GDSC/'
 
 import sys, getopt, os
 import numpy as np

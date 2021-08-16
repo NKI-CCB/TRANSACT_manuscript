@@ -198,60 +198,6 @@ if GDSC_drug_name not in os.listdir(output_folder):
     os.mkdir(output_folder + GDSC_drug_name)
 output_folder += GDSC_drug_name + '/'
 
-# Cross-validation for each parameter in the grid
-# for param_idx, param in enumerate(parameter_grid):
-#     print('START PARAM NUMBER %s'%(param_idx))
-
-#     param['n_input'] = X_values.shape[1]
-#     network_folder = make_figure_folder(output_folder, param)
-
-#     y_predict_nn = np.zeros(y_values.shape[0])
-
-#     for split_idx, (train_index, valid_index) in enumerate(split_folds.split(X_values, y_values)):
-#         print('START SPLIT NUMBER %s'%(split_idx))
-#         X_train, y_train = X_values[train_index], y_values[train_index]
-#         X_valid, y_valid = X_values[valid_index], y_values[valid_index]
-        
-#         net = make_network(param)
-#         net = NeuralNetRegressor(
-#             net,
-#             max_epochs=param['n_epochs'],
-#             lr=param['learning_rate'],
-#             batch_size=param['batch_size'],
-#             device= 'cuda' if torch.cuda.is_available() else 'cpu',
-#             optimizer=torch.optim.SGD,
-#             optimizer__momentum=param['momentum'],
-#             optimizer__weight_decay=param['l2_penalty'],
-#             iterator_train__shuffle = True,
-#             verbose=0
-#         )
-#         pipeline = Pipeline([
-#             ('scaler', StandardScaler(with_mean=with_mean, with_std=with_std)),
-#             ('net', net)
-#         ]
-#         )
-#         pipeline.fit(X_train,
-#                      y_train)
-#         y_predict_nn[valid_index] = pipeline.predict(X_valid.astype(np.float32)).flatten()
-        
-#         pipeline_file = 'clf_random-state_%s_split-nbre_%s.pkl'%(random_state,
-#                                                                 split_idx)
-#         dump(pipeline, '%s/%s'%(network_folder, pipeline_file))
-
-#     pd.DataFrame(
-#         y_predict_nn,
-#         index=y.index
-#     ).to_csv('%s/prediction_random-state_%s.csv'%(network_folder,
-#                                                   random_state))
-
-#     pred_perf = scipy.stats.pearsonr(y_predict_nn, y_values.flatten())
-#     MSE = mean_squared_error(y_predict_nn, y_values.flatten())
-#     perf_df = pd.DataFrame([pred_perf[0], MSE], index=['pred_perf', 'MSE']).T
-#     perf_df.to_csv('%s/pred_perf_random-state_%s.csv'%(network_folder,
-#                                                        random_state))
-
-#     dump(param, '%s/param.pkl'%(network_folder))
-
 
 # Cross-validation with ElasticNet
 alpha_values = np.logspace(-5,10,16)

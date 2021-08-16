@@ -16,7 +16,7 @@
 
 
 n_splits = 5
-output_folder = './output/GDSC_to_HMF/'
+output_folder = './output/GDSC_to_HMF/baseline_B/'
 figure_folder = './figures/GDSC_HMF_combat/'
 
 import os, sys, getopt
@@ -167,9 +167,9 @@ if GDSC_drug_name in ['Cetuximab',
                     'Bleomycin (50 uM)', 
                     'Pemetrexed',
                     'AICA Ribonucleotide']:
-    GDSC_drug_response_file = '/DATA/s.mourragui/data/2019_10_01_cell_model_passport/GDSC1_drug_response.xlsx'
+    GDSC_drug_response_file = '../data/GDSC/response/GDSC1_drug_response.xlsx'
 else:
-    GDSC_drug_response_file = '/DATA/s.mourragui/data/2019_10_01_cell_model_passport/GDSC2_drug_response.xlsx'
+    GDSC_drug_response_file = '../data/GDSC/response/2019_10_01_cell_model_passport/GDSC2_drug_response.xlsx'
 GDSC_drug_response_df = pd.read_excel(GDSC_drug_response_file)
 
 X, y = read_GDSC_drug_response(GDSC_drug_name,

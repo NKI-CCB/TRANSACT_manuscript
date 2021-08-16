@@ -59,7 +59,7 @@ drug_list =[
     ('Cetuximab', None, 'Cetuximab')
 ]
 
-output_uncorrected_cv_folder = '../data/output/GDSC_only/'
+output_uncorrected_cv_folder = '/../deep_learning_CV/output/GDSC/'
 random_state = 183627362
 n_retrain = 50
 
