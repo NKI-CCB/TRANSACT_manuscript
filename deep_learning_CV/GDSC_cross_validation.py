@@ -78,10 +78,8 @@ for opt, arg in opts:
     elif opt in ("-r", "--ofile"):
         random_state = int(arg)
 
-print(random_state)
-random_state = random_state if random_state else 15485
 
-print(GDSC_drug_id, GDSC_drug_name)
+random_state = random_state if random_state else 15485
 
 tissues = {
     'GDSC': ['All'],
@@ -96,13 +94,14 @@ data_sources = ['GDSC', 'TCGA']
 
 data_types = ['rnaseq']
 genes_filtering = 'mini_cancer'
-data_normalization = 'library_size'
+
 # Read data
 data_df = read_data(tissues={'GDSC':['All']},
                     data_types=['rnaseq'],
                     projects={'GDSC':[None]},
                     data_sources=['GDSC'],
                     folder_basis='../data/')
+
 while type(data_df) == dict:
     keys = list(data_df.keys())
     if len(keys) != 1:

@@ -12,7 +12,6 @@ data_sources = ['GDSC', 'TCGA']
 
 data_types = ['rnaseq']
 genes_filtering = 'mini_cancer'
-data_normalization = 'library_size'
 
 source = 'GDSC'
 target = 'TCGA'

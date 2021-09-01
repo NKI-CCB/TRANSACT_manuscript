@@ -94,7 +94,6 @@ data_sources = ['GDSC', 'TCGA']
 
 data_types = ['rnaseq']
 genes_filtering = 'mini_cancer'
-data_normalization = 'library_size' # Can be TPM, "library_size" or "log". Else will not have any influence.
 
 source = 'GDSC'
 target = 'TCGA'

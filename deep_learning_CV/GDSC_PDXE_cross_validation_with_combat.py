@@ -98,7 +98,6 @@ data_sources = ['GDSC', 'PDXE']
 
 data_types = ['fpkm']
 genes_filtering = 'mini'
-data_normalization = 'library_size' # Can be TPM, "library_size" or "log". Else will not have any influence.
 
 source = 'GDSC'
 target = 'PDXE'
