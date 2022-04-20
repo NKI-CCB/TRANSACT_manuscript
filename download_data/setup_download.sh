@@ -1,11 +1,8 @@
 # Set up the environment
-conda create -n data_download python=3.6
+conda create -y -n data_download python=3.6
 eval "$(conda shell.bash hook)"
 conda activate data_download
-conda install -c anaconda virtualenv
-conda install setuptools
-conda install dateutil
-conda install pandas
+conda install -y -c anaconda virtualenv
 pip install xlrd==1.2.0
 pip install -r ./TCGA_dependencies/requirements.txt
 
