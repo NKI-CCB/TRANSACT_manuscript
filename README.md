@@ -22,8 +22,8 @@ You need to have conda 4.8 or higher. Based on that, you can settup your environ
 We provide a script to download the three public datasets used (GDSC, TCGA and PDXE). First you need to set-up the download environment:
 
 <em>
-	conda create -n data_download python=3.6 <br/>
-	conda activate data_download <br/>
+	git clone https://github.com/NKI-CCB/TRANSACT_manuscript.git<br/>
+	cd TRANSACT_manuscript<br/>
 	cd ./download_data/ <br/>
 	sh setup_download.sh <br/>
 	sh download_data.sh <br/>
