@@ -4,6 +4,14 @@ import numpy as np
 from functools import reduce
 
 PDXE_folder = '../data/PDXE/'
+fpkm_folder = '../data/PDXE/fpkm'
+response_folder = '../data/PDXE/response'
+
+if not os.path.exists(fpkm_folder):
+    os.makedirs(fpkm_folder)
+
+if not os.path.exists(response_folder):
+    os.makedirs(response_folder)
 
 raw_data_file = os.listdir('%sraw/'%(PDXE_folder))
 raw_data_file = [f for f in raw_data_file if '.xlsx' in f]
