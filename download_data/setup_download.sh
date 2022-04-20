@@ -1,5 +1,5 @@
 # Set up the environment
-conda create -y -n data_download python=3.6t
+conda create -y -n data_download python=3.6
 eval "$(conda shell.bash hook)"
 conda activate data_download
 conda install -y -c anaconda virtualenv
