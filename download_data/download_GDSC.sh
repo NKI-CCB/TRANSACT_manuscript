@@ -1,4 +1,4 @@
-mkdir ../data/GDSC/raw
+mkdir -p ../data/GDSC/raw
 
 wget -P ../data/GDSC/raw https://cog.sanger.ac.uk/cmp/download/rnaseq_20191101.zip
 unzip ../data/GDSC/raw/rnaseq_20191101.zip -d ../data/GDSC/raw/

@@ -4,7 +4,7 @@ conda activate data_download
 raw_folder='../data/TCGA/raw'
 manifest_folder='./TCGA_manifests/'
 
-mkdir $raw_folder
+mkdir -p $raw_folder
 ./gdc-client/bin/gdc-client 'download' -m $manifest_folder'manifest.txt' -d $raw_folder
 
 # Supplement can be changed and retrieved from here https://academic.oup.com/bioinformatics/article/32/19/2891/2196464#supplementary-data
