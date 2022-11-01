@@ -16,7 +16,7 @@ ipython-genutils==0.2.0
 jdcal==1.4.1
 jedi==0.17.1
 jeepney==0.4.3
-joblib==0.14.1
+joblib==1.2.0
 jsonschema==2.6.0
 jupyter-client==6.1.5
 jupyter-core==4.6.3
