@@ -19,7 +19,7 @@ jeepney==0.4.3
 joblib==1.2.0
 jsonschema==2.6.0
 jupyter-client==6.1.5
-jupyter-core==4.6.3
+jupyter-core==4.11.2
 keyring==21.2.1
 kiwisolver==1.1.0
 llvmlite==0.33.0
